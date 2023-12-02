@@ -1,0 +1,15 @@
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bg-projetos{
+    display: flex;
+    flex-direction: row;
+    margin: 100px auto 100px auto;
+}
+
+.bg-projetos p{
+    background-color: rgb(159, 159, 129);
+}

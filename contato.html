@@ -5,6 +5,7 @@
 	
 	<title>Página do Lucas</title>
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/contato.css">
 </head>
 
 <body>
@@ -19,42 +20,57 @@
 				<li><a href="curriculo.html">Curriculo</a></li>
 				<li><a href="sobre.html">Sobre</a></li>
 				<li><a href="contato.html">Contato</a></li>
-					
+				
 			</ul>				
 		</nav>
 	</header>
-	<div>
-		<div class="coluna-1">
-			<h1>CONTATO</h1>
+	<main>
+		<h1>Para entender melhor seu projeto, você pode entrar em contato comigo pelo formulário. Estarei aqui para tirar todas as suas dúvidas!</h1>
+		<br>	
+		<p><a href="https://www.youtube.com/watch?v=wwqOJ2o84S4">video</a> para poder entender e fazer melhor essa parte de formulário</p>
+		<p>PS: vou retirar essa parte depois que finalizar o formulário</p>
 
-			<p>Escolhi o curso de Programador Front-End ead pois tenho interesse  em usar os conhecimentos de programação client-side para melhorar meus trabalhos como designer e assim contruir apicações mais complexas de ponta-a-ponta dessas duas áreas profissionais.</p><br>
-			<p>O curso visa qualificar o aluno como profissional da área, com competências para o desenvolvimento de interface web na qual o usuário vai interagir, o chamado Front-End. O profissional dessa área atua fundamentalmente em empresas de TI de forma geral e de desenvolvimento de tecnologias de softwares, sites, startups e agências de comunicação.</p><br>
-			<p>Com as tecnologias de html, css e javascript são desenvolvidas as maiorias das aplicações da internet.O curso Me deu a base da carreira de programação à seguir independente do ramo da área. Os módulos são como o mapa do tesouro.</p>
+		<form class="formulario" action="/submit-form" method="POST">
+			<label for="name">Nome:</label>
+			<input type="text" id="name" name="name"><br><br>
+			<label for="email">E-mail:</label>
+			<input type="email" id="email" name="email"><br><br>
+			<label for="message">Mensagem:</label>
+			<textarea id="message" name="message"></textarea><br><br>
+			<input type="submit" value="Enviar">
+		  </form>
+		 
+		  <div>
+			<label> qualquer coisa ai</label>
+			<select id="selecione">
+				<option>a</option>
+				<option>b</option>
+				<option>c</option>
+				<option>d</option>
+				<option>e</option>
+			</select>
+		</div>
+		<br>
+		<div>
+			<label>Qual lado da aplicação deseja?</label>
+			<label>
+				<imput type="radio" name="devweb" value="frontend">Front-end</imput>
+			</label>
+			<label>
+				<imput type="radio" name="devweb" value="backend">Back-end</imput>
+			</label>
+			<label>
+				<imput type="radio" name="devweb" value="fullstack">Fullstack</imput>
+			</label>
+		</div>
 		
-			<ul>
-				<li>Iniciação à Tecnologia da Informação</li>
-				<p>Aqui é onde se situa e tem um contexto geral ta história e da profissão, diferenciando desenvolvimento front end de web design, ux/ui design por exemplo.</p>
-				
-				<li >Lógica de Programação</li>
-				<p>Nesse módulo  é explicado as bases de algorítimo eos fundamentos que são as báses de qualquer linguagem de programação.</p>
-				<li>FrontEnd Essencial</li>
-				<p>São passados  as bases de HTML(linguagem de marcação de hipertexto) e <b>CSS</b>(folha de estilos em cascata) nesse momento já conseguimos contruir páginas web e interfaces de vários tamanhos e designs diferentes. </p>
-				<li>Desenvolvimento Web</li>
-				<p>É aqui que colocamos em prática o que estudamos em lógica de programação com a linguagemde programação javascript. O que possibilita dar dinamismo as páginas web e demais interfaces obtendo os imputs, processando os dados e dando as respostas necessárias para o funcionamento do sistema.</p>
-				<li>Integração de Competências Profissionais.</li>
-				<p>Aqui culmina tudo o que foi aprendido no curso, com a adição de um framework que deixa o workflow mais dinamico e condizente com o que o mercado espera de um programador front-end.</p>
-			</ul>
-		</div>	
-		<div class="coluna-2">
-			
-		<ul>
-			<a href="https://developer.mozilla.org/pt-BR/docs/learn/getting_started_with_the_web/html_basics" target="_blank"><li>HTML</li></a>
-			<a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank"><li>CSS</li></a>
-			<a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><li>JavaScript</li></a>
-			<a href="https://kenzie.com.br/blog/react/" target="_blank"><li>React</li></a>
-		</ul>
+
 		
-	</div>
+
+
+		
+		
+	</main>
 </div>		
 		<!--RODAPE-->
 		
