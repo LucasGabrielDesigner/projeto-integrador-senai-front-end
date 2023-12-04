@@ -7,9 +7,24 @@ main{
 .bg-projetos{
     display: flex;
     flex-direction: row;
-    margin: 100px auto 100px auto;
+    /* margin: 100px auto 100px auto; */
 }
 
 .bg-projetos p{
     background-color: rgb(159, 159, 129);
+}
+
+.teste, .teste div{
+    border: 5px solid rgb(251, 118, 140);
+}
+
+.teste div{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.teste img{
+    width: 30px;
 }
