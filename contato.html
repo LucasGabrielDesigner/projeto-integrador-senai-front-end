@@ -12,7 +12,7 @@
 	<header>
 		<nav>
 			<div >
-				<img class="logo" src="./imagens/caneca_dev.jpg" alt="caneca de cafe personalizada front-end">
+				<img class="logo" src="./imagens/caneca.png" alt="caneca de cafe personalizada front-end">
 			</div>
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -27,42 +27,29 @@
 	<main>
 		<h1>Para entender melhor seu projeto, você pode entrar em contato comigo pelo formulário. Estarei aqui para tirar todas as suas dúvidas!</h1>
 		<br>	
-		<p><a href="https://www.youtube.com/watch?v=wwqOJ2o84S4">video</a> para poder entender e fazer melhor essa parte de formulário</p>
-		<p>PS: vou retirar essa parte depois que finalizar o formulário</p>
-
-		<form class="formulario" action="/submit-form" method="POST">
-			<label for="name">Nome:</label>
-			<input type="text" id="name" name="name"><br><br>
-			<label for="email">E-mail:</label>
-			<input type="email" id="email" name="email"><br><br>
-			<label for="message">Mensagem:</label>
-			<textarea id="message" name="message"></textarea><br><br>
-			<input type="submit" value="Enviar">
-		  </form>
-		 
-		  <div>
-			<label> qualquer coisa ai</label>
-			<select id="selecione">
-				<option>a</option>
-				<option>b</option>
-				<option>c</option>
-				<option>d</option>
-				<option>e</option>
-			</select>
+		
+		<div class="container">
+			<h2>Formulário para Contato</h2>
+			<form id="contactForm">
+				<label id="name">Nome:</label>
+				<input type="text" id="name" name="name" placeholder="digite seu nome." required>
+	
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+	
+				<label for="whatsapp">WhatsApp:</label>
+				<input type="tel" id="whatsapp" name="whatsapp" pattern="[0-9]{10,11}" placeholder="EX: ( 21 ) 12345 - 6789">
+	
+				<label for="message">Mensagem:</label>
+				<textarea id="message" name="message" rows="4" required></textarea>
+	
+				<button type="button" onclick="submitForm()">Enviar</button>
+			</form>
+			<div id="thankYouMessage" class="hidden">
+				<p>Obrigado por me escrever. Entrarei em contato o mais rápido possível!</p>
+			</div>
 		</div>
-		<br>
-		<div>
-			<label>Qual lado da aplicação deseja?</label>
-			<label>
-				<imput type="radio" name="devweb" value="frontend">Front-end</imput>
-			</label>
-			<label>
-				<imput type="radio" name="devweb" value="backend">Back-end</imput>
-			</label>
-			<label>
-				<imput type="radio" name="devweb" value="fullstack">Fullstack</imput>
-			</label>
-		</div>
+		<script src="./js/script.js"></script>
 		
 
 		

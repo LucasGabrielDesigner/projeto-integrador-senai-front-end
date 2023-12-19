@@ -1,1 +1,16 @@
-h1{color:pink;}
+.coluna-1{
+    width: 64%; 
+    float: left; 
+    padding:60px  100px 0;
+    background-color: antiquewhite;
+    padding-top: 200px;
+    padding-bottom:388px ;
+}
+
+.coluna-2{
+    display: grid;
+    width: 36%; 
+    float: left;
+    padding:  300px 0 300px 0;
+    box-shadow: -1px 0px 5px  black;
+}

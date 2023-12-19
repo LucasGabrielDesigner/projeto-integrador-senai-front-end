@@ -9,15 +9,15 @@
     
 }
 
- /* body{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-} */
-
 header{
-    background-color:rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 5px 10px black;
+    border-bottom:2px solid rgb(147, 147, 147) ;
     display: inline-block;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    
 }
 
 
@@ -40,37 +40,28 @@ nav {
   }
 
 .logo{
-    width: 200px;
-    height: 200px;
+    width: 150px;
     max-width: 100%;
-    margin: auto 50px;
 }
-
-
-
 
 p, ul{
     text-align: justify;
     margin: 0 20px 0 50px;
-    
 }
 
 .coluna-1{
     width: 90%; 
-    float: left;
+    float: left; 
+    padding:60px  100px 0;
+    background-color: antiquewhite;
 }
+
 .coluna-2{
     display: grid;
     width: 10%; 
     float: left;
-    grid-template-columns: 1fr 1fr;
-    
-    padding-top: 100px;
-    margin:  300px 0 100px 0;
     padding:  300px 0 300px 0;
     box-shadow: -1px 0px 5px  black;
-  
-    
 }
 
 .minha-foto{
@@ -85,6 +76,7 @@ p, ul{
     font-size: 70px;
     font-family: Josefin Sans;
     list-style-type: none;
+    color: white;
 }
 
 .rede-social{
@@ -105,6 +97,18 @@ table a{
     color :rgb(81, 202, 81);
 }
 
+.apresentacao ul{
+list-style-type: none;
+}
+
+.apresentacao{
+    background-image: url("../imagens/bg-foto-frontend.png");
+    width: 100%;
+    /* margin-top: -7px; */
+    padding-top:175px;
+     
+    
+}
 
 
 

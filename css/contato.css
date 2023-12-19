@@ -1,1 +1,58 @@
+main{
+    padding-top: 200px;
+}
 
+.container {
+    max-width: 600px;
+    margin: 25px auto;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input{
+    border-radius: 50px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+textarea {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: #2b612d;
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
