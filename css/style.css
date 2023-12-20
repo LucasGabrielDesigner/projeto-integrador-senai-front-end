@@ -95,6 +95,7 @@ table td{
 }
 table a{
     color :rgb(81, 202, 81);
+    transform: scale(0.7);
 }
 
 .apresentacao ul{
